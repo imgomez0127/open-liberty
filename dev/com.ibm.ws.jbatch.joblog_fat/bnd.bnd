@@ -1,0 +1,27 @@
+-include= ~../cnf/resources/bnd/bundle.props
+bVersion=1.0
+
+src: \
+    fat/src,\
+    test-applications/batchFAT.war/src
+
+fat.project: true
+
+-buildpath:\
+    fattest.simplicity;version=latest,\
+    ../fattest.simplicity/lib/public.api.jar;version=file,\
+    com.ibm.websphere.javaee.servlet.3.0;version=latest,\
+    com.ibm.websphere.javaee.batch.1.0;version=latest,\
+    com.ibm.websphere.javaee.cdi.1.0;version=latest,\
+	../build.sharedResources/lib/junit/old/junit.jar;version=file,\
+    test-applications/batchFAT.war/resources/WEB-INF/lib/apache-jul-log4j-bridge-1.0.0-20080915.045446-7.jar;version=file,\
+    test-applications/batchFAT.war/resources/WEB-INF/lib/log4j-1.2.17.jar;version=file,\
+    com.ibm.ws.common.encoder;version=latest,\
+    com.ibm.ws.jbatch.test.dbservlet;version=latest,\
+    com.ibm.ws.org.slf4j.api.1.7.7;version=latest,\
+    com.ibm.websphere.javaee.jsonp.1.0;version=latest,\
+    com.ibm.ws.junit.extensions;version=latest,\
+	commons-httpclient:commons-httpclient;version=3.1,\
+	com.ibm.ws.org.apache.httpcomponents;version=latest,\
+	org.apache.httpcomponents:httpmime;version=4.3.1,\
+    com.ibm.websphere.javaee.jaxb.2.2;version=latest,\

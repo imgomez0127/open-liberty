@@ -1,0 +1,23 @@
+-include= ~../cnf/resources/bnd/bundle.props
+bVersion=1.0
+
+Bundle-Name: WAS Java Test DBServlet
+Bundle-SymbolicName: com.ibm.ws.jbatch.test.dbservlet
+
+
+-buildpath:\
+	com.ibm.websphere.javaee.servlet.3.0;version=latest,\
+	com.ibm.websphere.org.osgi.core;version=latest,\
+	com.ibm.websphere.org.osgi.service.component;version=latest,\
+	com.ibm.wsspi.org.osgi.service.component.annotations;version=latest,\
+	com.ibm.websphere.javaee.jsonp.1.0;version=latest,\
+	com.ibm.websphere.javaee.batch.1.0;version=latest,\
+	fattest.simplicity;version=latest,\
+	../fattest.simplicity/lib/public.api.jar;version=file,\
+	com.ibm.websphere.javaee.cdi.1.2;version=latest,\
+	com.ibm.websphere.javaee.transaction.1.2;version=latest,\
+	com.ibm.ws.common.encoder;version=latest,\
+	commons-httpclient:commons-httpclient;version=3.1,\
+	com.ibm.ws.org.apache.httpcomponents;version=latest,\
+	org.apache.httpcomponents:httpmime;version=4.3.1,\
+	../build.sharedResources/lib/junit/old/junit.jar;version=file

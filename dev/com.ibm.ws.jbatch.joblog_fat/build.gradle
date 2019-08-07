@@ -1,0 +1,79 @@
+dependencies{
+    requiredLibs project(":com.ibm.ws.jbatch.test.dbservlet"),
+    project(":fattest.simplicity"),
+    "commons-httpclient:commons-httpclient:3.1",
+    project(":com.ibm.websphere.javaee.jaxb.2.2"),
+    "org.apache.derby:derbyclient:10.11.1.1"
+    
+}
+
+task copyCompiledClasses{
+    dependsOn jar
+    copy{
+        from "build/classes/java/main/batch/fat/artifacts"
+        into new File("test-applications/batchFAT.war/resources/WEB-INF/classes/batch/fat/artifacts")
+    }
+    copy{
+        from "build/classes/java/main/batch/fat/web"
+        into new File("test-applications/batchFAT.war/resources/WEB-INF/classes/batch/fat/web")
+    }
+}
+
+task addBatchFatDropins(type:Zip){
+    dependsOn copyCompiledClasses
+    def desiredParentFolderName = file("publish/servers/").getPath()
+    def fileNames = []
+    def hostFolder = null
+    fileTree("publish/servers").visit{FileVisitDetails visitDetails -> 
+        def currentFile = visitDetails.file
+        def currentFilesParentName = currentFile.getParent()
+        if(currentFile.isDirectory() && currentFilesParentName.equals(desiredParentFolderName)){
+            if(hostFolder == null){
+                hostFolder = currentFile.getName()
+            }
+            else{
+                fileNames << currentFile.getName()
+            }
+        }
+    }
+    from "test-applications/batchFAT.war/resources"
+    destinationDir new File(autoFvtDir, '/publish/servers/'+hostFolder+'/dropins/')
+    archiveName = "batchFAT.war"
+    doLast{
+        for(String fileName : fileNames){ 
+            copy{
+                from "$autoFvtDir/publish/servers/"+hostFolder+"/dropins/batchFAT.war"
+                into new File(autoFvtDir,"/publish/servers/"+fileName+"/dropins")
+            }
+        }
+    }
+}
+
+task copyDerbyDriversToServers{
+    shouldRunAfter jar
+    dependsOn addBatchFatDropins
+    doLast{
+        def desiredParentFolderName = file("publish/servers/").getPath()
+        def fileNames = []
+        fileTree("publish/servers").visit{FileVisitDetails visitDetails -> 
+            def currentFile = visitDetails.file
+            def currentFilesParentName = currentFile.getParent()
+            if(currentFile.isDirectory() && currentFilesParentName.equals(desiredParentFolderName)){
+                fileNames << currentFile.getName()
+            }
+        }
+        for(String fileName : fileNames){
+            copy{
+                println(fileName)
+                from configurations.derby
+                into new File(autoFvtDir,"/publish/servers/" + fileName + '/resources/derby')
+                rename 'derby-.*.jar', 'derby.jar'
+            }
+        }
+    }
+}
+
+autoFVT{
+    dependsOn addBatchFatDropins
+    dependsOn copyDerbyDriversToServers
+}

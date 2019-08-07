@@ -1,0 +1,58 @@
+<server>
+
+ 	<include location="../fatTestPorts.xml" />
+
+	<featureManager>
+		<feature>osgiconsole-1.0</feature>
+		<feature>batchManagement-1.0</feature>
+		<feature>servlet-3.1</feature>
+		<feature>jdbc-4.2</feature>
+        <feature>componenttest-1.0</feature>
+        <!-- For Java 2 Security -->
+        <feature>jaxb-2.2</feature>
+
+	</featureManager>
+
+    <logging traceSpecification="*=info:batch.fat.artifacts.*=all:com.ibm.jbatch.container.impl.BatchKernelImpl=all:com.ibm.jbatch.container.execution.impl.*=all:com.ibm.ws.jbatch.joblog.internal.impl.*=all" />
+
+    <!-- Write batch.fat.* loggers write to the server log as well, but prevent server logging from writing to the job log -->
+    <batchJobLogging jobLoggers="batch.fat" writeToServerLog="true" includeServerLogging="false"/>
+
+    <batchPersistence jobStoreRef="BatchDatabaseStore" />
+
+    <databaseStore id="BatchDatabaseStore" dataSourceRef="batchDB" schema="JBATCH" tablePrefix="" />
+
+	<!--logging traceSpecification="com.ibm.jbatch.*=all=enabled:jsr352.test.servlet.*=all=enabled" /-->
+
+	<library id="DerbyLib">
+		<fileset dir="${server.config.dir}/resources/derby" />
+	</library>
+	
+	<dataSource id="batchDB" jndiName="jdbc/batch">
+		<jdbcDriver libraryRef="DerbyLib" />
+		<!-- The following configures in-memory Derby.  For Derby on disk, which is needed if the database
+       	is required beyond a single server start, configure the databaseName with a file location such as:
+       	databaseName="${shared.config.dir}/data/derbydb" -->
+        <properties.derby.embedded databaseName="memory:BATCHDB"
+			createDatabase="create" user="user" password="pass" />
+	</dataSource>
+	
+	<!-- ssl keystore to enable SSL port for batch rest connector -->
+    <keyStore id="defaultKeyStore" password="{xor}EzY9Oi0rJg==" /> <!-- pwd: Liberty -->
+
+    <!-- users authorized to the batch rest connector (ibm/api realm) -->
+    <basicRegistry id="basic" realm="ibm/api">
+        <user name="bob" password="bobpwd" />
+        <user name="jane" password="janepwd" />    
+    </basicRegistry>
+    
+    <!-- Everyone is a batch admin for non security related tests -->
+	<authorization-roles id="com.ibm.ws.batch">
+		<security-role name="batchAdmin">
+			<user name="bob" />
+			<user name="jane" />
+		</security-role>
+	</authorization-roles>
+
+
+</server>

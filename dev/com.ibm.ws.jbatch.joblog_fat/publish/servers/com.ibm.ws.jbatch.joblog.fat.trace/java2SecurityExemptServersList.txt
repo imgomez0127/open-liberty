@@ -1,0 +1,1350 @@
+# Exempt server list 
+# Servers in this list will be exempt from Java 2 Security testing
+# when the global.java2.sec property is set to true, except when the
+# server's bootstrap.properties file already enables Java 2 Security. 
+# File Created: May 24, 2016 at 16:45:44 EDT
+
+# DO NOT REMOVE - Java 2 Security Specific servers
+
+#com.ibm.websphere.appserver.osgiBundle_fat FAT tests' servers
+com.ibm.websphere.appserver.osgiBundle
+
+#com.ibm.ws.app.manager.eba_fat FAT tests' servers
+com.ibm.ws.app.manager.bp.comp
+com.ibm.ws.app.manager.eba.dsdemo
+com.ibm.ws.app.manager.eba_fat
+com.ibm.ws.app.manager.eba_invalid
+
+#com.ibm.ws.app.manager.wab_fat FAT tests' servers
+com.ibm.ws.app.manager.wab_fat
+
+#com.ibm.ws.app.manager_fat FAT tests' servers
+appManagerTestServer
+slowAppServer
+
+#com.ibm.ws.beanvalidation_fat FAT tests' servers
+com.ibm.ws.beanvalidation.cdi.fat
+com.ibm.ws.beanvalidation.dynamicFeature.fat
+com.ibm.ws.beanvalidation.ejb_1.0.fat
+com.ibm.ws.beanvalidation.ejb_1.1.fat
+com.ibm.ws.beanvalidation_1.0.fat
+com.ibm.ws.beanvalidation_1.1.fat
+
+#com.ibm.ws.cdi-1.0.mdb_fat FAT tests' servers
+cdiMDBIntegrationServer
+
+#com.ibm.ws.cdi-1.0_fat FAT tests' servers
+aparServer
+cdiBasicJspServer
+cdiConversationBeanServer
+cdiDecoratorServer
+cdiEEServer
+cdiEjbIFaceServer
+cdiEjbInterceptorServer
+cdiEjbInWarServer
+cdiEjbServer
+cdiInitializerServer
+cdiInterceptorServer
+cdiJsfServer
+cdiJsfServerDeferServletLoadFalse
+cdiLoose
+cdiNullInjectionServer
+cdiProducerServer
+cdiQualifierServer
+cdiScopeServer
+cdiSecurity
+cdiServer
+cdiSessionPersistServer
+cdiSimpleEventServer
+cdiSpecializesServer
+cdiWebServicesServer
+NullInjectionPointServer
+springServer
+stereotypesServer
+
+#com.ibm.ws.cdi-1.2.mdb_fat FAT tests' servers
+cdiMDBIntegrationServer
+
+#com.ibm.ws.cdi-1.2_fat FAT tests' servers
+aparServer
+cdiBasicJspServer
+cdiEEJPA20Server
+cdiEEServer
+cdiEjbIFaceServer
+cdiEjbInWarServer
+cdiEjbServer
+cdiJsfServer
+cdiLoose
+cdiQualifierServer
+cdiSecurity
+cdiServer
+cdiSessionPersistServer
+cdiSimpleEventServer
+cdiSpecializesServer
+cdiWebServicesServer
+stereotypesServer
+
+#com.ibm.ws.cdi-1.2_fat_extended FAT tests' servers
+cdi12AfterTypeDiscoveryServer
+cdi12AlterableContextServer
+cdi12BasicServer
+cdi12BeanLifecycleTestServer
+cdi12ClassExclusionTestServer
+cdi12DeltaSpikeServer
+cdi12DynamicallyAddedBeansServer
+cdi12EJB32Server
+cdi12EjbConstructorInjectionServer
+cdi12EjbDefInXmlServer
+cdi12EventMetadataServer
+cdi12JNDIServer
+cdi12JSFWithSharedLibServer
+cdi12ManagedBeanTestServer
+cdi12PassivationServer
+cdi12RuntimeExtensionServer
+cdi12SharedLibraryServer
+cdi12StatefulSessionBeanServer
+cdi12WebServicesServer
+conversationFilterServer
+nonContextualServer
+visTestServer
+
+#com.ibm.ws.clientcontainer.javacolon_fat FAT tests' servers
+com.ibm.ws.clientcontainer.fat.javacolonServerLookup
+
+#com.ibm.ws.clientcontainer_fat FAT tests' servers
+com.ibm.ws.clientcontainer.fat.ClientContainerServer
+
+#com.ibm.ws.cloudant_fat_modifyconfig FAT tests' servers
+com.ibm.ws.cloudant.fat.modifyconfig
+
+#com.ibm.ws.cloudoe.autowiring_fat FAT tests' servers
+WiringServer
+
+#com.ibm.ws.cluster.manager_fat FAT tests' servers
+com.ibm.ws.cluster.manager.fat_clusterMergePluginsMemberOne
+com.ibm.ws.cluster.manager.fat_clusterMergePluginsMemberTwo
+com.ibm.ws.cluster.manager.fat_clusterOneMemberOne
+com.ibm.ws.cluster.manager.fat_clusterOneMemberTwo
+com.ibm.ws.cluster.manager.fat_controller
+
+#com.ibm.ws.collective.controller_fat FAT tests' servers
+com.ibm.ws.collective.command.fat
+com.ibm.ws.collective.command.fat.remote
+
+#com.ibm.ws.collective.repository_fat FAT tests' servers
+com.ibm.ws.collective.repository.fat_replica1
+com.ibm.ws.collective.repository.fat_replica2
+
+#com.ibm.ws.collective.rest_fat FAT tests' servers
+com.ibm.ws.collective.rest.fat
+com.ibm.ws.collective.rest.fat.member1
+
+#com.ibm.ws.collective.rest_fat.rw FAT tests' servers
+com.ibm.ws.collective.rest.fat.controller
+com.ibm.ws.collective.rest.fat.member1
+com.ibm.ws.collective.rest.fat.member2
+com.ibm.ws.collective.rest.fat.member3
+com.ibm.ws.collective.rest.fat.member4.autoScaled
+
+#com.ibm.ws.collective_fat FAT tests' servers
+com.ibm.ws.collective.fat.controllerOne
+com.ibm.ws.collective.fat.controllerThree
+com.ibm.ws.collective.fat.controllerTwo
+
+#com.ibm.ws.collector.manager_fat FAT tests' servers
+GCServer
+MsgServer
+SampleSourceHandlerServer
+TraceSourceHandlerServer
+
+#com.ibm.ws.concurrent.persistent_fat FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat
+
+#com.ibm.ws.concurrent.persistent_fat_cl FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.cl
+
+#com.ibm.ws.concurrent.persistent_fat_compat FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.compat
+
+#com.ibm.ws.concurrent.persistent_fat_compatibility FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.compatibility
+
+#com.ibm.ws.concurrent.persistent_fat_configupdate_databasetaskstore FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.configupdate.dbtaskstore
+
+#com.ibm.ws.concurrent.persistent_fat_delayexec FAT tests' servers
+com.ibm.ws.concurrent.persistent.delayexec.fat
+
+#com.ibm.ws.concurrent.persistent_fat_demo FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.demo
+
+#com.ibm.ws.concurrent.persistent_fat_errorpaths FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.errorpaths
+
+#com.ibm.ws.concurrent.persistent_fat_execdisabled FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.execdisabled
+
+#com.ibm.ws.concurrent.persistent_fat_feature FAT tests' servers
+com.ibm.ws.concurrent.persistent.feature.fat
+
+#com.ibm.ws.concurrent.persistent_fat_initial_polling FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.polling
+
+#com.ibm.ws.concurrent.persistent_fat_jca FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.jca
+
+#com.ibm.ws.concurrent.persistent_fat_loadtest FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.loadtest
+
+#com.ibm.ws.concurrent.persistent_fat_locking FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.locking
+
+#com.ibm.ws.concurrent.persistent_fat_mbean FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.mbean
+
+#com.ibm.ws.concurrent.persistent_fat_multiple FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.multiple
+
+#com.ibm.ws.concurrent.persistent_fat_multiserver FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.multiserver.server1
+com.ibm.ws.concurrent.persistent.fat.multiserver.server2
+
+#com.ibm.ws.concurrent.persistent_fat_oneexec FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.oneexec
+
+#com.ibm.ws.concurrent.persistent_fat_retry FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.retry
+
+#com.ibm.ws.concurrent.persistent_fat_simctrl FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.simctrl
+
+#com.ibm.ws.concurrent.persistent_fat_timers FAT tests' servers
+com.ibm.ws.concurrent.persistent.fat.timers
+
+#com.ibm.ws.concurrent_fat FAT tests' servers
+com.ibm.ws.concurrent.fat
+
+#com.ibm.ws.concurrent_fat_cdi_1.2 FAT tests' servers
+com.ibm.ws.concurrent.fat.cdi.1.2
+
+#com.ibm.ws.concurrent_fat_db FAT tests' servers
+com.ibm.ws.concurrent.fat.db
+
+#com.ibm.ws.concurrent_fat_ejb FAT tests' servers
+com.ibm.ws.concurrent.fat.ejb
+
+#com.ibm.ws.context.dynamic.metadata.create_fat FAT tests' servers
+com.ibm.ws.context.dynamic.metadata.create.fat
+
+#com.ibm.ws.context_fat FAT tests' servers
+com.ibm.ws.context.fat
+
+#com.ibm.ws.couchdb_fat FAT tests' servers
+com.ibm.ws.couchdb.fat.server
+com.ibm.ws.couchdb.fat.server.wab
+
+#com.ibm.ws.dynacache_fat FAT tests' servers
+cacheProviderServer
+dynacachetests
+CommandTest
+CacheContents
+NioMapTest
+CacheStressTestClient
+CacheStatistics
+CachePolicies
+MultipleCacheInstances
+PreInvalidationListenerTest
+Servlet30AsyncTest
+DiskContents
+StrutsTest
+TilesTest
+CacheProviderTest
+AttrTest
+MiscTest
+IncludeTest
+ComponentTest
+BufferTest
+FragmentCachingTest
+ConsumeSubfragmentsExcludeTest
+DoNotCacheTest
+RangeAttrTest
+RangeTest
+SaveCookieTest
+SkipCacheAttributeTest
+StaticCacheTest
+DiscardTest
+PageOneTest
+ProgrammaticServletCachingTest
+EvictionTest
+HTODTest1
+HTODTest2
+HTODTest3
+MBeanCounterTest
+HTODPMITest
+PMITest
+
+#com.ibm.ws.dynacache_fat_servlet31 FAT tests' servers
+dynacachetests
+
+#com.ibm.ws.dynamic.routing_fat FAT tests' servers
+com.ibm.ws.dynamic.routing.fat.collective.controller
+com.ibm.ws.dynamic.routing.fat.collective.member
+com.ibm.ws.dynamic.routing.fat.collective.replica1
+com.ibm.ws.dynamic.routing.fat.collective.replica2
+com.ibm.ws.dynamic.routing.fat.collective.replica3
+
+#com.ibm.ws.eba.blueprint.transform_fat FAT tests' servers
+com.ibm.ws.eba.blueprint.transform
+
+#com.ibm.ws.eba.jpa_fat FAT tests' servers
+com.ibm.ws.eba.jpa.FATServer
+com.ibm.ws.eba.jpa.FATServer_v21
+
+#com.ibm.ws.eba.jpa_fat_lWAS FAT tests' servers
+com.ibm.ws.eba.jpa.compileenhanced.FATServer
+
+#com.ibm.ws.eba.loose_fat FAT tests' servers
+com.ibm.ws.eba.loose_fat
+
+#com.ibm.ws.eba.tx_fat FAT tests' servers
+com.ibm.ws.eba.tx.FATServer
+
+#com.ibm.ws.eba.wab_fat FAT tests' servers
+com.ibm.ws.eba.wab.FATServer
+
+#com.ibm.ws.eba.wab_fat_new FAT tests' servers
+com.ibm.ws.eba.wab.fragServer
+
+#com.ibm.ws.ejbcontainer.cdi_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.cdi.fat.EJB31-CDI10-Server
+com.ibm.ws.ejbcontainer.cdi.fat.EJB32-CDI12-Server
+
+#com.ibm.ws.ejbcontainer.ejb2x_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.ejb2x.fat
+com.ibm.ws.ejbcontainer.ejb2x.fat.cache
+com.ibm.ws.ejbcontainer.ejb2x.fat.mdb20
+com.ibm.ws.ejbcontainer.ejb2x.fat.mdb21
+com.ibm.ws.ejbcontainer.ejb2x.fat.pool
+com.ibm.ws.ejbcontainer.ejb2x.fat.remote
+
+#com.ibm.ws.ejbcontainer.interceptor.v32_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.interceptor.v32.fat.basic
+
+#com.ibm.ws.ejbcontainer.mdb32_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.mdb31.fat
+com.ibm.ws.ejbcontainer.mdb32.fat
+com.ibm.ws.ejbcontainer.mdb32.noMethodInt.fat
+
+#com.ibm.ws.ejbcontainer.mdb_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.fat.MsgEndpointServer
+com.ibm.ws.ejbcontainer.mdb.fat
+com.ibm.ws.ejbcontainer.mdb.fat.MDBAServer
+com.ibm.ws.ejbcontainer.mdb.fat.MDBMServer
+com.ibm.ws.ejbcontainer.mdb.fat.MDBXServer
+
+#com.ibm.ws.ejbcontainer.remote.client_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.remote.client.fat.serverInjection
+
+#com.ibm.ws.ejbcontainer.security.jacc_fat_java7 FAT tests' servers
+com.ibm.ws.ejbcontainer.security.jacc_fat
+com.ibm.ws.ejbcontainer.security.jacc_fat.ejbjar
+com.ibm.ws.ejbcontainer.security.jacc_fat.ejbjar.inwar
+com.ibm.ws.ejbcontainer.security.jacc_fat.ejbjar.mc
+com.ibm.ws.ejbcontainer.security.jacc_fat.mergebindings
+com.ibm.ws.security.authorization.jacc.dynamic_fat
+
+#com.ibm.ws.ejbcontainer.security_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.security.fat
+com.ibm.ws.ejbcontainer.security.fat.bindings
+com.ibm.ws.ejbcontainer.security.fat.ejbjar
+com.ibm.ws.ejbcontainer.security.fat.ejbjar.inwar
+com.ibm.ws.ejbcontainer.security.fat.ejbjar.mc
+com.ibm.ws.ejbcontainer.security.fat.ejbjar.mergebindings
+com.ibm.ws.ejbcontainer.security.fat.ejbjar.standalone
+com.ibm.ws.ejbcontainer.security.fat.mergebindings
+
+#com.ibm.ws.ejbcontainer.security_fat.features FAT tests' servers
+com.ibm.ws.ejbcontainer.security.feature.fat.dynamic
+
+#com.ibm.ws.ejbcontainer.service_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.service.fat
+
+#com.ibm.ws.ejbcontainer.timer_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.fat.AutoNPTimerServer
+com.ibm.ws.ejbcontainer.fat.AutoPersistentTimerServer
+com.ibm.ws.ejbcontainer.fat.NoParamTimerServer
+com.ibm.ws.ejbcontainer.fat.PersistentTimerMBeanServer
+com.ibm.ws.ejbcontainer.fat.PersistentTimerPersistenceServer
+com.ibm.ws.ejbcontainer.fat.PersistentTimerServer
+com.ibm.ws.ejbcontainer.timer.fat.NpTimerConfigServer
+
+#com.ibm.ws.ejbcontainer.v32_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.v32.fat.AroundConstruct
+com.ibm.ws.ejbcontainer.v32.fat.AroundConstructXml
+com.ibm.ws.ejbcontainer.v32.fat.basic
+com.ibm.ws.ejbcontainer.v32.fat.passivation
+
+#com.ibm.ws.ejbcontainer_fat FAT tests' servers
+com.ibm.ws.ejbcontainer.fat.BasicJPAServer
+com.ibm.ws.ejbcontainer.fat.BasicSessionBeanServer
+com.ibm.ws.ejbcontainer.fat.BeanValidationServer
+com.ibm.ws.ejbcontainer.fat.ConfigServer
+com.ibm.ws.ejbcontainer.fat.ExpandedAppServer
+com.ibm.ws.ejbcontainer.fat.JDBCSessionBeanServer
+com.ibm.ws.ejbcontainer.fat.JPACDIServer
+com.ibm.ws.ejbcontainer.fat.MessageDrivenBeanServer
+com.ibm.ws.ejbcontainer.fat.NotSupportedServer
+com.ibm.ws.ejbcontainer.fat.StartEjbsAtAppStartServer
+OnlinePollingSampleServer
+
+#com.ibm.ws.ejbcontainer_fat_tWAS FAT tests' servers
+com.ibm.ws.ejbcontainer.fat.tWAS.BasicSessionServer
+com.ibm.ws.ejbcontainer.fat.tWAS.DSDServer
+com.ibm.ws.ejbcontainer.fat.tWAS.InjectionServer
+com.ibm.ws.ejbcontainer.fat.tWAS.InterceptorServer
+com.ibm.ws.ejbcontainer.fat.tWAS.NoInterfaceServer
+com.ibm.ws.ejbcontainer.fat.tWAS.SessionSyncServer
+
+#com.ibm.ws.ejbcontainer_fat_tWAS.v32 FAT tests' servers
+com.ibm.ws.ejbcontainer.fat.tWAS.v32
+com.ibm.ws.ejbcontainer.fat.tWAS.v32.pmi
+com.ibm.ws.ejbcontainer.fat.tWAS.v32.secure
+com.ibm.ws.ejbcontainer.fat.tWAS.v32.sfTimeout
+
+#com.ibm.ws.event.logging_fat FAT tests' servers
+EventLoggingServer
+
+#com.ibm.ws.filetransfer_fat FAT tests' servers
+FileTransferMBean_FAT
+
+#com.ibm.ws.health.manager_fat FAT tests' servers
+com.ibm.ws.health.manager.controller1
+com.ibm.ws.health.manager.member1
+com.ibm.ws.health.manager.member2
+
+#com.ibm.ws.injection_fat FAT tests' servers
+com.ibm.ws.injection.fat.autowire
+injectionTestServer
+
+#com.ibm.ws.injection_fat_tWAS FAT tests' servers
+com.ibm.ws.injection.fat.tWAS.EnvEntryServer
+com.ibm.ws.injection.fat.tWAS.JPAServer
+com.ibm.ws.injection.fat.tWAS.ResRefServer
+com.ibm.ws.injection.fat.tWAS.TranServer
+
+#com.ibm.ws.install_fat FAT tests' servers
+com.ibm.ws.install_fat
+
+#com.ibm.ws.javamail_fat FAT tests' servers
+com.ibm.ws.javamail.fat
+mailSessionTestServer
+
+#com.ibm.ws.jaxrs-2.1.client_fat FAT tests' servers
+jaxrs21.client.JAXRS21ComplexClientTest
+
+#com.ibm.ws.jaxrs-2.0.cdi_fat FAT tests' servers
+com.ibm.ws.jaxrs20.cdi.fat.basic12
+com.ibm.ws.jaxrs20.cdi.fat.beanvalidation12
+com.ibm.ws.jaxrs20.cdi.fat.complex12
+com.ibm.ws.jaxrs20.cdi.fat.lifecyclemismatch12
+
+#com.ibm.ws.jaxrs-2.0.client_fat FAT tests' servers
+jaxrs20.client.BasicClientTest
+jaxrs20.client.ClientContextInjectionTest
+jaxrs20.client.ComplexClientTest
+jaxrs20.client.IBMJson4JProvidersTest
+jaxrs20.client.JacksonProvidersTest
+jaxrs20.client.JAXRS20ClientAsyncInvokerTest
+jaxrs20.client.JAXRS20ClientInvocationTest
+jaxrs20.client.JAXRS20ClientSyncInvokerTest
+jaxrs20.client.JAXRS20WithClientFeatureEnabledTest
+jaxrs20.client.JAXRSCallbackTest
+jaxrs20.client.JAXRSClientSSLTest
+jaxrs20.client.JAXRSClientStandaloneTest
+jaxrs20.client.JAXRSLtpaClientTest
+jaxrs20.client.JAXRSLtpaServerTest
+jaxrs20.client.JsonPProvidersTest
+jaxrs20.client.ProxyClientTest
+jaxrs20.client.ThirdpartyJerseyClientTest
+jaxrs20.client.TimeoutClientTest
+
+#com.ibm.ws.jaxrs-2.0.ejb.cdi_fat FAT tests' servers
+com.ibm.ws.jaxrs20.fat.ejb
+com.ibm.ws.jaxrs20.fat.ejb.cdi12
+com.ibm.ws.jaxrs20.fat.ejb.ejbjaxrsinjar
+
+#com.ibm.ws.jaxrs-2.0.webcontainer_fat FAT tests' servers
+jaxrs20.service.JaxRsJsonPTest
+
+#com.ibm.ws.jaxrs-2.0_fat FAT tests' servers
+com.ibm.ws.jaxrs.fat.callback
+com.ibm.ws.jaxrs.fat.webcontainer
+
+#com.ibm.ws.jaxrs.ejb.cdi_fat FAT tests' servers
+com.ibm.ws.jaxrs.fat.ejb
+com.ibm.ws.jaxrs.fat.ejb.cdi
+com.ibm.ws.jaxrs.fat.ejb.ejbjaxrsinjar
+com.ibm.ws.jaxrs.fat.ejb.injar
+com.ibm.ws.jaxrs.fat.ejb.nojar
+
+#com.ibm.ws.jaxrs_fat FAT tests' servers
+com.ibm.ws.jaxrs.fat.webcontainer
+
+#com.ibm.ws.jaxws.clientContainer_fat_IWAS FAT tests' servers
+JaxWsTransportSecurityServer
+WebServiceRefTestServer
+
+#com.ibm.ws.jaxws.ejb_fat_lWAS FAT tests' servers
+EJBHandler
+EJBInWarServer
+EJBJndi
+EJBWSBasic
+EJBWSContext
+EJBWSInterceptor
+EJBWSLifeCycle
+
+#com.ibm.ws.jaxws.security_fat_lWAS FAT tests' servers
+EJBInJarSecurityServer
+EJBInWarSecurityServer
+JaxWsTransportSecurityServer
+POJOServiceSecurityServer
+WsdlLocationHttpsServer
+
+#com.ibm.ws.jaxws.wab_fat FAT tests' servers
+HandlerChainTestServer
+HandlerChainWithWebServiceClientTest
+WebServiceContextTestServer
+WebServiceRefFeaturesTestServer
+WebServiceRefTestServer
+WsBndServiceRefOverrideTestServer
+
+#com.ibm.ws.jaxws.webcontainer_fat_lWAS FAT tests' servers
+com.ibm.ws.jaxws.virtualhost
+EJBServiceRefBndTestServer
+HandlerChainTestServer
+HandlerChainWithWebServiceClientTest
+MTOMTestServer
+PortComponentRefTestServer
+ServerSideStubClientTestServer
+WebServiceContextTestServer
+WebServiceRefFeaturesTestServer
+WebServiceRefTestServer
+WsBndServiceRefOverrideTestServer
+
+#com.ibm.ws.jaxws.wsat_fat FAT tests' servers
+policyattachments_client
+policyattachments_service
+
+#com.ibm.ws.jbatch.jms_fat FAT tests' servers
+BatchJmsDispatcher
+BatchJmsDispatcher2
+BatchJmsEndpoint
+BatchJmsEndpoint2
+BatchJmsMessageEngine
+BatchJmsSingleServer_fat
+BatchJmsThrottlingDispatcher
+JobEventsSingleServer
+
+#com.ibm.ws.jbatch.joblog_fat FAT tests' servers
+com.ibm.ws.jbatch.joblog.config1.fat
+com.ibm.ws.jbatch.joblog.config2.fat
+com.ibm.ws.jbatch.joblog.config3.fat
+com.ibm.ws.jbatch.joblog.config4.fat
+com.ibm.ws.jbatch.joblog.fat
+com.ibm.ws.jbatch.joblog.fat.trace
+
+#com.ibm.ws.jbatch.rest_fat FAT tests' servers
+com.ibm.ws.jbatch.rest.fat
+com.ibm.ws.jbatch.rest.joblog.fat
+com.ibm.ws.jbatch.rest.jpa.fat
+com.ibm.ws.jbatch.rest.notables.fat
+
+#com.ibm.ws.jbatch.tck_fat FAT tests' servers
+com.ibm.ws.jbatch.tck.fat.trans.db
+com.ibm.ws.jbatch.tck.memorypersistence
+com.ibm.ws.jbatch.tck.nontran_fat
+com.ibm.ws.jbatch.tck_fat
+
+#com.ibm.ws.jbatch.utility_fat FAT tests' servers
+com.ibm.ws.jbatch.utility.fat
+
+#com.ibm.ws.jbatch_fat FAT tests' servers
+batchFAT
+com.ibm.ws.jbatch.everyone_security.fat
+com.ibm.ws.jbatch.fat
+com.ibm.ws.jbatch.fat.jpa.persistence
+com.ibm.ws.jbatch.fat.memory.persistence
+com.ibm.ws.jbatch.nosecurity.fat
+ManagedBonusPayout
+
+#com.ibm.ws.jca-1.7_fat FAT tests' servers
+com.ibm.ws.jca.fat
+
+#com.ibm.ws.jca.jdbc.mbean_fat FAT tests' servers
+com.ibm.ws.jca.jdbc.mbean.fat
+
+#com.ibm.ws.jca.resourcedefinition.jms-2.0_fat FAT tests' servers
+com.ibm.ws.jca.resourcedefinition.jms-2.0_fat
+
+#com.ibm.ws.jca_fat FAT tests' servers
+com.ibm.ws.jca.fat
+
+#com.ibm.ws.jca_fat_bval FAT tests' servers
+com.ibm.ws.jca.fat.bval
+
+#com.ibm.ws.jca_fat_configprops FAT tests' servers
+com.ibm.ws.jca.fat.configprops
+
+#com.ibm.ws.jca_fat_derbyra FAT tests' servers
+com.ibm.ws.jca.fat.derbyra
+com.ibm.ws.jca.fat.derbyra.security
+
+#com.ibm.ws.jca_fat_dynamicConfig FAT tests' servers
+com.ibm.ws.jca.fat.dynamicConfig
+
+#com.ibm.ws.jca_fat_embeddedrar FAT tests' servers
+com.ibm.ws.jca.fat.embeddedrar
+
+#com.ibm.ws.jca_fat_enterpriseApp FAT tests' servers
+com.ibm.ws.jca.fat.enterpriseApp
+
+#com.ibm.ws.jca_fat_fvt FAT tests' servers
+com.ibm.ws.jca.fat.fvt
+
+#com.ibm.ws.jca_fat_jms.thirdparty FAT tests' servers
+com.ibm.ws.jca.fat.jms.thirdparty
+
+#com.ibm.ws.jca_fat_metagen FAT tests' servers
+com.ibm.ws.jca.fat.metagen
+
+#com.ibm.ws.jca_fat_regr FAT tests' servers
+com.ibm.ws.jca.fat.regr
+
+#com.ibm.ws.jca_fat_warmstart FAT tests' servers
+com.ibm.ws.jca.fat.warmstart
+
+#com.ibm.ws.jdbc_fat FAT tests' servers
+com.ibm.ws.jdbc.fat
+com.ibm.ws.jdbc.jaas.fat
+
+#com.ibm.ws.jdbc_fat_derbyclient FAT tests' servers
+com.ibm.ws.jdbc.fat.derbyclient
+
+#com.ibm.ws.jdbc_fat_fvt FAT tests' servers
+com.ibm.ws.jdbc.fat.fvt
+
+#com.ibm.ws.jdbc_fat_sqlj FAT tests' servers
+com.ibm.ws.sqlj.fat
+
+#com.ibm.ws.jdbc_fat_v41 FAT tests' servers
+com.ibm.ws.jdbc.fat.v41
+
+#com.ibm.ws.jmx.connector.client.rest_fat FAT tests' servers
+jmxConnectorServer
+
+#com.ibm.ws.jmx.scripting.client_fat FAT tests' servers
+jmxConnectorServerForJython
+
+#com.ibm.ws.jndi.iiop_fat FAT tests' servers
+pontneuf
+
+#com.ibm.ws.jndi.url.contexts_fat FAT tests' servers
+com.ibm.ws.jndi.url.contexts.fat
+com.ibm.ws.jndi.url.contexts.serialization.fat
+
+#com.ibm.ws.jndi_fat FAT tests' servers
+jndi_entry_decode
+jndi_entry_dynamic_update
+jndi_entry_fat
+jndi_entry_id_update
+jndi_fat
+jndi_global_ref_fat
+jndi_url_entry_fat
+jndi_url_entry_unknown_fat
+parentlast_fat
+
+#com.ibm.ws.jpa.clientcontainer_fat FAT tests' servers
+BasicJPAServer
+
+#com.ibm.ws.jpa.container_fat FAT tests' servers
+com.ibm.ws.jpa.container.fat
+
+#com.ibm.ws.jpa_fat FAT tests' servers
+com.ibm.ws.jpa.el.defaultds.fat.server
+com.ibm.ws.jpa.el.fat.server
+com.ibm.ws.jpa.el.injection.fat.server
+com.ibm.ws.jpa.fat.autowire
+com.ibm.ws.jpa.fat.cache
+com.ibm.ws.jpa.fat.criteriaquery
+com.ibm.ws.jpa.fat.dserror
+com.ibm.ws.jpa.fat.embeddable
+com.ibm.ws.jpa.fat.emlocking
+com.ibm.ws.jpa.fat.entitymanager20
+com.ibm.ws.jpa.fat.fetchgroup
+com.ibm.ws.jpa.fat.ojexternalization
+com.ibm.ws.jpa.fat.server
+com.ibm.ws.jpa.jpa20ee7featuresupport
+com.ibm.ws.jpa.osgi.fat
+JPAServletEngine
+
+#com.ibm.ws.jsf-2.2_fat FAT tests' servers
+jsf22IncludeTestServer
+jsf22TracingServer
+jsfAparServer
+jsfCDIConfigByACPServer
+jsfCDIFacesInMetaInfServer
+jsfCDIFacesInWebXMLServer
+jsfCDIServer
+jsfServer
+
+#com.ibm.ws.jsf_fat FAT tests' servers
+JSF_FATServer
+
+#com.ibm.ws.jsf_fat_lWAS FAT tests' servers
+com.ibm.ws.jsf_fat_lWAS
+DynamicJSF
+java2securityServer
+
+#com.ibm.ws.jsp-2.2_fat_lWAS FAT tests' servers
+jspClassloaderParentFirst
+jspClassloaderParentLast
+jspServerExpandedApps
+jspServerFullPackageName
+jspSharedLibServer
+loose_jsp_server
+
+#com.ibm.ws.jsp-2.3_fat FAT tests' servers
+jspServer
+
+#com.ibm.ws.kernel.boot_test FAT tests' servers
+com.ibm.ws.kernel.boot.classpath.fat
+
+#com.ibm.ws.kernel.feature_test FAT tests' servers
+com.ibm.ws.kernel.feature.esa.provider
+com.ibm.ws.kernel.feature.fat.install
+com.ibm.ws.kernel.feature.fat.minify
+com.ibm.ws.kernel.feature.fat.product
+com.ibm.ws.kernel.feature.fat.user
+com.ibm.ws.kernel.feature.miniest
+com.ibm.ws.kernel.icons_test
+
+#com.ibm.ws.kernel.metatype.helper_test FAT tests' servers
+com.ibm.ws.kernel.metatype.helperServer
+
+#com.ibm.ws.managedbeansXcdi-1.2_fat FAT tests' servers
+com.ibm.ws.managedbeansXcdi12.fat.ManagedBeansInjectionServer
+
+#com.ibm.ws.managedbeansXejb-3.2_fat FAT tests' servers
+com.ibm.ws.managedbeans.fat.ManagedBeansBindingsEjbServer
+com.ibm.ws.managedbeans.fat.ManagedBeansEjbServer
+com.ibm.ws.managedbeansXejb32.fat.ManagedBeansInterceptorServer
+
+#com.ibm.ws.managedbeans_fat FAT tests' servers
+com.ibm.ws.managedbeans.fat.ManagedBeansBindingsEjbServer
+com.ibm.ws.managedbeans.fat.ManagedBeansEjbServer
+com.ibm.ws.managedbeans.fat.ManagedBeansServer
+
+#com.ibm.ws.management.j2ee.client_fat_java7 FAT tests' servers
+com.ibm.ws.management.j2ee.client.fat.server
+
+#com.ibm.ws.management.security.authorization_fat FAT tests' servers
+com.ibm.ws.management.security.authorization.fat
+com.ibm.ws.management.security.authorization.jmx.fat
+com.ibm.ws.management.security.local.fat
+
+#com.ibm.ws.messaging.clientcontainer_fat FAT tests' servers
+com.ibm.ws.clientcontainer.fat.ClientContainerServer
+
+#com.ibm.ws.messaging.comms_fat FAT tests' servers
+com.ibm.ws.messaging.comms.client
+com.ibm.ws.messaging.comms.server
+com.ibm.ws.messaging.comms.WJO.Client
+com.ibm.ws.messaging.comms.WJO.Server
+
+#com.ibm.ws.messaging.jms.wmq_fat FAT tests' servers
+com.ibm.ws.messaging.jms.wmq.fat
+
+#com.ibm.ws.messaging.jms20.deliverydelay_fat FAT tests' servers
+ClientServer
+MEServer
+
+#com.ibm.ws.messaging.jms20.wmq_fat_java7 FAT tests' servers
+com.ibm.ws.messaging.jms20.wmq.fat
+
+#com.ibm.ws.messaging.jms20AutoCloseable_fat_java7 FAT tests' servers
+TestServer
+
+#com.ibm.ws.messaging.jms20_fat FAT tests' servers
+TestServer
+TestServer1
+
+#com.ibm.ws.messaging.jms20security_fat FAT tests' servers
+TestServer
+TestServer1
+
+#com.ibm.ws.messaging.jms_fat FAT tests' servers
+com.ibm.ws.messaging.jms.mdb
+
+#com.ibm.ws.messaging_fat FAT tests' servers
+ActivateDeactivateME
+MdbServer
+MEServer
+TestServer
+TestServer1
+TestServer3
+TestServer4
+TestServer5
+TransactionServer
+TestServer.audit
+
+#com.ibm.ws.mongo_fat FAT tests' servers
+com.ibm.ws.mongo.fat.server
+com.ibm.ws.mongo.fat.server.wab
+
+#com.ibm.ws.monitor_fat FAT tests' servers
+MonitorServer
+
+#com.ibm.ws.mscontrol_fat FAT tests' servers
+com.ibm.ws.mscontrol_test.fat
+
+#com.ibm.ws.persistence.mbean_fat FAT tests' servers
+com.ibm.ws.persistence.mbean.fat
+com.ibm.ws.persistence.mbean.offline.fat
+
+#com.ibm.ws.persistence.utility_fat FAT tests' servers
+com.ibm.ws.persistence.utility.fat
+
+#com.ibm.ws.persistence_fat FAT tests' servers
+com.ibm.ws.persistence.consumer
+
+#com.ibm.ws.request.probe.jdbc_fat FAT tests' servers
+JDBCServer
+
+#com.ibm.ws.request.probe_fat FAT tests' servers
+ProbeServer
+
+#com.ibm.ws.request.timing_fat FAT tests' servers
+RequestTimingServer
+
+#com.ibm.ws.rest.api.discovery.subscription_fat FAT tests' servers
+com.ibm.ws.rest.api.discovery.subscription.controller
+com.ibm.ws.rest.api.discovery.subscription.member
+websocketServer
+
+#com.ibm.ws.rtcomm.connector_fat FAT tests' servers
+com.ibm.ws.rtcomm.connector_test.fat
+ExternalInviteServer
+ExternalPRServer
+WebrtcGwExternalInvite
+WebrtcGwExternalPR
+WebrtcGwInternalInvite
+WebrtcGwInternalPR
+WebrtcGwReInviteDest
+WebrtcGwReInviteSrc
+
+#com.ibm.ws.runtime.update_fat FAT tests' servers
+com.ibm.ws.runtime.update.fat
+
+#com.ibm.ws.scaling.controller_fat FAT tests' servers
+com.ibm.ws.scaling.controller.fat.controllerHaTest1
+com.ibm.ws.scaling.controller.fat.controllerHaTest2
+com.ibm.ws.scaling.controller.fat.controllerHaTest3
+com.ibm.ws.scaling.controller.fat.memberHaTest
+com.ibm.ws.scaling.controller.fat.memberHaTest2
+
+#com.ibm.ws.scaling.manager.stack_fat FAT tests' servers
+com.ibm.ws.scaling.manager.stack.fat.scalingController
+com.ibm.ws.scaling.manager.stack.fat.scalingController1
+
+#com.ibm.ws.security.authentication.builtin_fat FAT tests' servers
+com.ibm.ws.security.authentication.fat
+com.ibm.ws.security.authentication.fat.authcache
+com.ibm.ws.security.authentication.fat.hashtablelogin
+com.ibm.ws.security.authentication.fat.jaasloginmodule
+com.ibm.ws.security.authentication.fat.noauthcache
+
+#com.ibm.ws.security.authentication.tai_fat FAT tests' servers
+com.ibm.ws.security.authentication.tai.fat
+
+#com.ibm.ws.security.client_fat_java7 FAT tests' servers
+BasicAuthTest
+
+#com.ibm.ws.security.context_fat FAT tests' servers
+com.ibm.ws.security.context_fat
+
+#com.ibm.ws.security.csiv2_fat FAT tests' servers
+com.ibm.ws.security.csiv2.fat.downstream.server
+com.ibm.ws.security.csiv2.fat.downstream.server.java2
+com.ibm.ws.security.csiv2.fat.intermediate.server
+com.ibm.ws.security.csiv2.fat.servlet.client
+com.ibm.ws.security.csiv2.fat.servlet.client.java2
+
+#com.ibm.ws.security.jaspic-1.1_fat FAT tests' servers
+com.ibm.ws.security.jaspic11.fat
+com.ibm.ws.security.jaspic11.fat.servlet30
+
+#com.ibm.ws.security.java2sec_fat FAT tests' servers
+com.ibm.ws.security.java2sec.fat.earAppJ2SecDisNoRestrictPerm
+com.ibm.ws.security.java2sec.fat.earAppJ2SecDisRestricPerm
+com.ibm.ws.security.java2sec.fat.J2SecEnabled
+com.ibm.ws.security.java2sec.fat.rarWithoutRaXml
+com.ibm.ws.security.java2sec.fat.rarWithRaXml
+com.ibm.ws.security.java2sec.fat.warAppNoRestrictPerm
+com.ibm.ws.security.java2sec.fat.warAppRestrictPerm
+
+#com.ibm.ws.security.oauth-2.0_fat FAT tests' servers
+com.ibm.ws.security.oauth-2.0.derby.fat
+com.ibm.ws.security.oauth-2.0.derby2.fat
+com.ibm.ws.security.oauth-2.0.derby3.fat
+com.ibm.ws.security.oauth-2.0.fat
+com.ibm.ws.security.oauth-2.0.loginform.fat
+
+#com.ibm.ws.security.openid-2.0_fat FAT tests' servers
+com.ibm.ws.security.openid-2.0.fat.oauth
+
+#com.ibm.ws.security.openidconnect.client-1.0_fat FAT tests' servers
+com.ibm.ws.security.openidconnect.client-1.0_fat.op
+com.ibm.ws.security.openidconnect.client-1.0_fat.rp
+com.ibm.ws.security.openidconnect.client-1.0_fat.rpd
+
+#com.ibm.ws.security.openidconnect.client-1.0_fat.config FAT tests' servers
+com.ibm.ws.security.openidconnect.client-1.0_fat.config.op
+com.ibm.ws.security.openidconnect.client-1.0_fat.config.rp
+com.ibm.ws.security.openidconnect.client-1.0_fat.config.rpd
+
+#com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs FAT tests' servers
+com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs.op
+com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs.rp
+com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs.rpd
+com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs.rs
+com.ibm.ws.security.openidconnect.client-1.0_fat.jaxrs.rsd
+
+#com.ibm.ws.security.openidconnect.client-1.0_fat.saml FAT tests' servers
+com.ibm.ws.security.openidconnect.client-1.0_fat.saml.op
+com.ibm.ws.security.openidconnect.client-1.0_fat.saml.rp
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat
+com.ibm.ws.security.openidconnect.server-1.0_fat.cert
+com.ibm.ws.security.openidconnect.server-1.0_fat.cert_required
+com.ibm.ws.security.openidconnect.server-1.0_fat.tai
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.config FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.config
+com.ibm.ws.security.openidconnect.server-1.0_fat.config.customClaims
+com.ibm.ws.security.openidconnect.server-1.0_fat.config.derby
+com.ibm.ws.security.openidconnect.server-1.0_fat.config.multiProvider
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.authorize FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.authorize
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.clientregistration FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.clientregistration
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.coveragemap FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.coveragemap
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.end_session FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.end_session
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.introspect FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.introspect
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.introspect.pwdTest
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.token FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.token
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.userinfo FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.endpoint.userinfo
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.feature FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.feature
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.granttype.jwt FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.granttype.jwt
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs.OPserver
+com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs.RSserver
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs.config FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs.config.OPserver
+com.ibm.ws.security.openidconnect.server-1.0_fat.jaxrs.config.RSserver
+
+#com.ibm.ws.security.openidconnect.server-1.0_fat.saml FAT tests' servers
+com.ibm.ws.security.openidconnect.server-1.0_fat.saml
+
+#com.ibm.ws.security.saml.sso-2.0_fat.jaxrs FAT tests' servers
+com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.merged_sp_rs
+com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.rs
+com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.sp
+
+#com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.config FAT tests' servers
+com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.config.rs
+com.ibm.ws.security.saml.sso-2.0_fat.jaxrs.config.sp
+
+#com.ibm.ws.security.spnego_fat FAT tests' servers
+AuthFilterElementTest
+BasicAuthTest
+DynamicAuthFilterTest
+DynamicSpnegoConfigTest
+IncludeClientGSSCredentialInSubjectTest
+IncludeCustomCacheKeyTest
+InvokeAfterSSOTest
+ServicePrincipalNamesTest
+TrustedActiveDirectoryDomainsTest
+
+#com.ibm.ws.security.token.ltpa_fat FAT tests' servers
+com.ibm.ws.security.token.ltpa.fat
+
+#com.ibm.ws.security.wim.adapter.file_fat FAT tests' servers
+com.ibm.ws.security.wim.adapter.file.fat.allURAPIs
+com.ibm.ws.security.wim.adapter.file.fat.multiplerepos
+com.ibm.ws.security.wim.adapter.file.fat.repowithoutid
+
+#com.ibm.ws.security.wim.adapter.ldap_fat FAT tests' servers
+com.ibm.ws.security.registry.ldap.fat.ad
+com.ibm.ws.security.registry.ldap.fat.ad.noId
+com.ibm.ws.security.registry.ldap.fat.custom
+com.ibm.ws.security.registry.ldap.fat.ids
+com.ibm.ws.security.registry.ldap.fat.ids.extremeFailover
+com.ibm.ws.security.registry.ldap.fat.ids.failover
+com.ibm.ws.security.registry.ldap.fat.ids.nofilters
+com.ibm.ws.security.registry.ldap.fat.ids.reuseConnection
+com.ibm.ws.security.registry.ldap.fat.ids.ssl
+com.ibm.ws.security.registry.ldap.fat.ids.ssl.trustonly
+com.ibm.ws.security.registry.ldap.fat.performance
+com.ibm.ws.security.wim.adapter.ldap.fat.ad
+com.ibm.ws.security.wim.adapter.ldap.fat.ad.noId
+com.ibm.ws.security.wim.adapter.ldap.fat.ad.ssl
+com.ibm.ws.security.wim.adapter.ldap.fat.custom
+com.ibm.ws.security.wim.adapter.ldap.fat.dynamic
+com.ibm.ws.security.wim.adapter.ldap.fat.federation
+com.ibm.ws.security.wim.adapter.ldap.fat.sun
+com.ibm.ws.security.wim.adapter.ldap.fat.sun.attrMappingVar4
+com.ibm.ws.security.wim.adapter.ldap.fat.sun.default
+com.ibm.ws.security.wim.adapter.ldap.fat.sun.ssl
+com.ibm.ws.security.wim.adapter.ldap.fat.tds
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.attrMappingVar1
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.attrMappingVar2
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.attrMappingVar3
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.failover
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.ssl
+com.ibm.ws.security.wim.adapter.ldap.fat.tds.sslref
+com.ibm.ws.security.wim.adapter.ldap.fat.tworealms
+vmm.apis.tds.ldap
+
+#com.ibm.ws.security.wim.core_fat FAT tests' servers
+com.ibm.ws.security.wim.core.fat.dynamic
+com.ibm.ws.security.wim.core.fat.invalidBaseEntryInRealm
+com.ibm.ws.security.wim.core.fat.maxSearchResult
+
+#com.ibm.ws.security.wim.registry_fat FAT tests' servers
+com.ibm.ws.security.wim.registry.fat.DefaultWIMRealm
+com.ibm.ws.security.wim.registry.fat.DefaultWIMRealmMultipleRepos
+
+#com.ibm.ws.security.wim.scim_fat FAT tests' servers
+scim.custom.repository
+
+#com.ibm.ws.session-3.0_fat_lWAS FAT tests' servers
+com.ibm.ws.session-3.0_fat_lWAS
+
+#com.ibm.ws.ssl_fat FAT tests' servers
+com.ibm.ws.ssl.fat
+
+#com.ibm.ws.transaction.cloud_fat FAT tests' servers
+com.ibm.ws.transaction_CLOUD001
+com.ibm.ws.transaction_CLOUD002
+com.ibm.ws.transaction_dynamicTemplate
+com.ibm.ws.transaction_FSCLOUD001
+com.ibm.ws.transaction_FSCLOUD002
+
+#com.ibm.ws.transaction_fat FAT tests' servers
+com.ibm.ws.transaction
+com.ibm.ws.transaction_badlog
+com.ibm.ws.transaction_DB_Tranlog
+com.ibm.ws.transaction_DUPXID001
+com.ibm.ws.transaction_DUPXID002
+com.ibm.ws.transaction_HADB_Tranlog
+com.ibm.ws.transaction_SuffixDB_Tranlog
+
+#com.ibm.ws.transaction_fat_java7 FAT tests' servers
+com.ibm.ws.transaction
+com.ibm.ws.transaction_badlog
+com.ibm.ws.transaction_cdi
+com.ibm.ws.transaction_commitPriority
+com.ibm.ws.transaction_DB_Tranlog
+com.ibm.ws.transaction_eventListener
+com.ibm.ws.transaction_HADB_Tranlog
+com.ibm.ws.transaction_injection
+com.ibm.ws.transaction_SuffixDB_Tranlog
+com.ibm.ws.transaction_XAFlow
+
+#com.ibm.ws.transport.http_test FAT tests' servers
+com.ibm.ws.transport.http.accesslog.fat
+com.ibm.ws.transport.http.fat
+
+#com.ibm.ws.transport.iiop_fat FAT tests' servers
+buckyball
+
+#com.ibm.ws.ui.tool.deploy_fat.gui.nd FAT tests' servers
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.batchScan
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.controller
+
+#com.ibm.ws.ui.tool.deploy_fat.gui.nd.rw.docker FAT tests' servers
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.docker.batchScan
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.docker.controller
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.docker.member1
+
+#com.ibm.ws.ui.tool.deploy_fat.gui.nd.rw.liberty FAT tests' servers
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.liberty.batchScan
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.liberty.controller
+
+#com.ibm.ws.ui.tool.deploy_fat.gui.nd.rw.nodejs FAT tests' servers
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.nodejs.batchScan
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.nodejs.controller
+com.ibm.ws.ui.tool.deploy.fat.gui.nd.rw.nodejs.member1
+
+#com.ibm.ws.ui.tool.explore_fat.gui FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui
+com.ibm.ws.ui.tool.explore.fat.gui.batchScan
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.docker FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.docker.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.nodejs FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.nodejs.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.rw FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.rw.addremove FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.addremove.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.rw.allresources FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.allresources.member5
+
+#com.ibm.ws.ui.tool.explore_fat.gui.nd.rw.monitor FAT tests' servers
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.batchScan
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.controller
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.member1
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.member2
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.member3
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.member4.autoScaled
+com.ibm.ws.ui.tool.explore.fat.gui.nd.rw.monitor.member5
+
+#com.ibm.ws.ui.tool.javaBatch_fat.gui FAT tests' servers
+com.ibm.ws.ui.tool.javaBatch_fat.gui
+com.ibm.ws.ui.tool.javaBatch_fat.gui.batchScan
+
+#com.ibm.ws.ui.tool.serverConfig_fat.gui FAT tests' servers
+com.ibm.ws.ui.tool.serverConfig.fat.gui
+com.ibm.ws.ui.tool.serverConfig.fat.gui.batchScan
+
+#com.ibm.ws.ui.tool.serverConfig_fat.gui.nd FAT tests' servers
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.batchScan
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.controller
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.member1
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.member2
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.member3
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.member4.autoScaled
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.member5
+
+#com.ibm.ws.ui.tool.serverConfig_fat.gui.nd.rw FAT tests' servers
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.batchScan
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.controller
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.member1
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.member2
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.member3
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.member4.autoScaled
+com.ibm.ws.ui.tool.serverConfig.fat.gui.nd.rw.member5
+
+#com.ibm.ws.ui_fat.gui FAT tests' servers
+com.ibm.ws.ui.fat.gui
+com.ibm.ws.ui.fat.gui.batchScan
+
+#com.ibm.ws.webcontainer-8.0_fat FAT tests' servers
+webcontainer-8.0_tWAS_fat_server
+
+#com.ibm.ws.webcontainer-8.0_fat_lWAS FAT tests' servers
+aggressiveLoadServer
+asyncPM90834Server
+autoDeployServer
+blank_dropins_server
+com.ibm.ws.webcontainer-8.0_jarRelease
+com.ibm.ws.webcontainer-8.0_jarRelease_loose
+com.ibm.ws.webcontainer-8.0_PluginGenerator
+contextroot_config_extxmi_war_server
+contextroot_config_extxml_war_server
+contextroot_DD_ear_server
+contextroot_extxmi_war_server
+contextroot_extxml_war_server
+contextroot_ext_ear_server
+contextroot_name_ear_server
+crossContextIncludeAtStartup
+dummyServer
+ear_classpath_reference_server
+ear_default_library_server
+ear_server
+invalidServletMapping
+loose_getResource_server
+loose_literal_snoop_unzip_server
+loose_snoop_invalid_xml_server
+loose_snoop_server
+loose_static_server
+loose_with_annotations_server
+PM86037
+privateHeadersServer
+shareableServer
+testClasspath_Server
+testSSLrequestServer
+tldservletcontextlistener_addfilter
+tldservletcontextlistener_addlistener
+tldservletcontextlistener_addservlet
+war_getRealPath_server
+webcontainer-8.0_lWAS_ear_restart
+webcontainer-8.0_lWAS_fat_server
+webfragmentjndi_server
+
+#com.ibm.ws.webcontainer.security.jacc-1.5_fat FAT tests' servers
+com.ibm.ws.webcontainer.security.fat.basicauth
+com.ibm.ws.webcontainer.security.fat.formlogin
+com.ibm.ws.webcontainer.security.fat.loginmethod
+
+#com.ibm.ws.webcontainer.security_fat FAT tests' servers
+com.ibm.ws.webcontainer.security.fat.basicauth
+com.ibm.ws.webcontainer.security.fat.formlogin
+com.ibm.ws.webcontainer.security.fat.loginmethod
+
+#com.ibm.ws.webcontainer_fat_servlet31 FAT tests' servers
+servlet31_cdiListenersServer
+servlet31_cdiServer
+servlet31_cdiServletFilterListenerDynamicServer
+servlet31_cdiServletFilterListenerServer
+servlet31_cdiServletInterceptorServer
+servlet31_cdiUpgradeHandlerServer
+servlet31_jspServer
+servlet31_vhServer
+servlet31_wcServer
+servlet31_wcServer31
+
+#com.ibm.ws.webservices.handler_fat FAT tests' servers
+AddNumbersTestServer
+com.ibm.ws.jaxrs.fat.ejb
+EJBHandler
+EJBServiceRefBndTestServer
+HandlerChainTestServer
+HandlerRuleTestServer
+JaxWsTransportSecurityServer
+RS20TestServer
+RSEJBTestServer
+WebServiceRefTestServer
+
+#com.ibm.ws.webservices.javaee.common_fat FAT tests' servers
+com.ibm.ws.webservices.javaee.common.fat.threading
+EJBInWarWebServiceMergeServiceProviderTestServer
+WebServiceMergeServiceProviderTestServer
+
+#com.ibm.ws.wsat.common_test FAT tests' servers
+com.ibm.ws.wsat.coordinator
+com.ibm.ws.wsat.participant
+
+#com.ibm.ws.wsat.recovery_fat FAT tests' servers
+WSATRecovery1
+WSATRecovery2
+WSATSingleRecovery
+
+#com.ibm.ws.wsat_fat FAT tests' servers
+LPSDisabled
+MigrationServer1
+MigrationServer2
+MigrationServer3
+MultiServerTest
+ThirdServer
+WSATBasic
+WSATDBDisabled_Client
+WSATDBDisabled_Server1
+WSATDB_Client
+WSATDB_Server1
+WSATDB_Server2
+WSATEJB_Client
+WSATEJB_Server1
+WSATSleep
+WSATSSL_Client
+WSATSSL_Server1
+WSATSSL_Server2
+
+#com.ibm.ws.wsoc-1.0_fat FAT tests' servers
+basicTestServer
+cdi12TestServer
+miscellaneousTestServer
+traceTestServer
+
+#com.ibm.ws.wssecurity_fat FAT tests' servers
+com.ibm.ws.wssecurity_fat.x509crl
+
+#com.ibm.ws.wssecurity_fat.saml FAT tests' servers
+com.ibm.ws.wssecurity_fat.saml
+com.ibm.ws.wssecurity_fat.saml.2servers
+com.ibm.ws.wssecurity_fat.saml.2serverswithep
+com.ibm.ws.wssecurity_fat.saml.wssTemplates
+com.ibm.ws.wssecurity_fat.saml.wssTemplateswithep
+
+#com.ibm.ws.wssecurity_fat.saml.2 FAT tests' servers
+com.ibm.ws.wssecurity_fat.saml.2servers
+com.ibm.ws.wssecurity_fat.saml.caller
+
+#org.glassfish.json-1.0_fat FAT tests' servers
+com.ibm.ws.org.glassfish.json.fat.BasicJsonpServer
+com.ibm.ws.org.glassfish.json.fat.CustomFeatureJsonpServer
+
+#wlp.lib.extract_fat FAT tests' servers
+dependencyHostServer
+
+#Other servers
+larsServer
+com.ibm.ws.jca.1.7.fat.fvt
+securityejbjar
+dynamic002
+dynamic001
+com.ibm.ws.messaging.jms.wmq.bvt
+com.ibm.ws.app.manager.eba.duplicate
